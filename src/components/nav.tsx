@@ -23,11 +23,13 @@ const Nav = () => {
   return (
     <Container className="py-[32px]">
       <nav className="flex items-center justify-between">
-        <img
-          src="/assets/Logo.svg"
-          alt="Little Lemon Logo"
-          className="w-[300px] h-[81.1px]"
-        />
+        <a href="/">
+          <img
+            src="/assets/Logo.svg"
+            alt="Little Lemon Logo"
+            className="w-[300px] h-[81.1px]"
+          />
+        </a>
         <ul className="flex items-center justify-center gap-x-[16px] nav-link">
           {links.map((link) => (
             <li className="cursor-pointer" key={link.name}>
