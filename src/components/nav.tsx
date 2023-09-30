@@ -1,3 +1,4 @@
+import Button from "./common/button";
 import { Container } from "./common/container";
 
 const links = [
@@ -33,6 +34,11 @@ const Nav = () => {
               {link.name}
             </li>
           ))}
+          <li>
+            <a href="/">
+              <Button>Login</Button>
+            </a>
+          </li>
         </ul>
       </nav>
     </Container>
