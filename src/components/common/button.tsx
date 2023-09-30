@@ -3,7 +3,7 @@ interface ButtonProps {
 }
 
 const Button = ({ children }: ButtonProps) => {
-  return <div>{children}</div>;
+  return <button>{children}</button>;
 };
 
 export default Button;
