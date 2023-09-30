@@ -27,9 +27,11 @@ const Nav = () => {
           alt="Little Lemon Logo"
           className="w-[300px] h-[81.1px]"
         />
-        <ul className="flex items-center justify-center gap-x-[16px]">
+        <ul className="flex items-center justify-center gap-x-[16px] nav-link">
           {links.map((link) => (
-            <li key={link.name}>{link.name}</li>
+            <li className="cursor-pointer" key={link.name}>
+              {link.name}
+            </li>
           ))}
         </ul>
       </nav>
