@@ -1,4 +1,5 @@
 import Button from "../common/button";
+import MenuCard from "../common/menu-card";
 
 const Specials = () => {
   return (
@@ -9,6 +10,7 @@ const Specials = () => {
           <p className="font-bold karla text-lg">Online Menu</p>
         </Button>
       </div>
+      <MenuCard />
     </div>
   );
 };
