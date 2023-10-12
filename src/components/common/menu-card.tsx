@@ -1,5 +1,5 @@
 const MenuCard = () => {
-  return <div>Menu Card</div>;
+  return <div className="flex flex-col bg-[#EDEFEE] space-y-[24px]"></div>;
 };
 
 export default MenuCard;
