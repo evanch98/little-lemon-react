@@ -2,7 +2,7 @@ import Button from "../common/button";
 
 const Hero = () => {
   return (
-    <div className="bg-[#495E57] text-[#EDEFEE] flex items-center justify-center py-[32px] px-[146px]">
+    <div className="bg-[#495E57] text-[#EDEFEE] flex items-center justify-center py-[32px] md:px-[146px] px-[16px]">
       <div className="w-full flex flex-col items-center justify-center space-y-[24px]">
         <div className="w-full flex flex-col items-start justify-center -space-y-[20px]">
           <h1 className="text-[#F4CE14] markazi-text text-[4rem]">
