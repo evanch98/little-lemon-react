@@ -1,7 +1,7 @@
 import Button from "../common/button";
 import MenuCard from "../common/menu-card";
 
-const speicals = [
+const specials = [
   {
     name: "Greek Salad",
     price: "$12.99",
@@ -31,7 +31,16 @@ const Specials = () => {
           <p className="font-bold karla text-lg">Online Menu</p>
         </Button>
       </div>
-      <MenuCard />
+      <div className="w-full flex items-center justify-center space-x-[20px]">
+        {specials.map((special) => (
+          <MenuCard
+            key={special.name}
+            name={special.name}
+            price={special.price}
+            description={special.description}
+          />
+        ))}
+      </div>
     </div>
   );
 };
