@@ -16,13 +16,6 @@ const specials = [
       "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
     imgUrl: "/assets/bruchetta.svg",
   },
-  {
-    name: "Lemon Desert",
-    price: "$4.99",
-    description:
-      "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
-    imgUrl: "/assets/lemon dessert.jpg",
-  },
 ];
 
 const Specials = () => {
