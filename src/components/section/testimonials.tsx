@@ -29,7 +29,11 @@ const Testimonials = () => {
       </div>
       <div className="w-full flex items-center justify-center space-x-[20px]">
         {testimonials.map((testimonial) => (
-          <TestimonialCard />
+          <TestimonialCard
+            imgUrl="/assets/c1.svg"
+            name="Emily Stone"
+            feedback="It's a great experience. The ambiance is very welcoming and charming.."
+          />
         ))}
       </div>
     </div>
