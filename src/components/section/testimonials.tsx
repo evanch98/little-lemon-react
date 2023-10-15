@@ -1,4 +1,5 @@
 import MenuCard from "../common/menu-card";
+import TestimonialCard from "../common/testimonial-card";
 
 const testimonials = [
   {
@@ -29,12 +30,7 @@ const Testimonials = () => {
       </div>
       <div className="w-full flex items-center justify-center space-x-[20px]">
         {testimonials.map((testimonial) => (
-          <MenuCard
-            key={testimonial.name}
-            name={testimonial.name}
-            price={testimonial.price}
-            description={testimonial.description}
-          />
+          <TestimonialCard />
         ))}
       </div>
     </div>
