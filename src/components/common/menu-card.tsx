@@ -4,12 +4,13 @@ interface MenuCardProps {
   name: string;
   price: string;
   description: string;
+  imgUrl: string;
 }
 
-const MenuCard = ({ name, price, description }: MenuCardProps) => {
+const MenuCard = ({ name, price, description, imgUrl }: MenuCardProps) => {
   return (
     <div className="flex flex-col bg-[#EDEFEE]">
-      <img src="/assets/greek salad.jpg" height={274} width={424} alt="Dish" />
+      <img src={imgUrl} height={274} width={424} alt="Dish" />
       <div className="w-full flex flex-col p-[24px] space-y-[32px] text-[#333333]">
         <div className="flex items-center justify-between">
           <h2 className="font-bold karla text-lg">{name}</h2>
