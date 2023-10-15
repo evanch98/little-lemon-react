@@ -7,18 +7,21 @@ const specials = [
     price: "$12.99",
     description:
       "The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago feta cheese, garnished with crunchy garlic and rosemary croutons.",
+    imgUrl: "/assets/greek salad.jpg",
   },
   {
     name: "Bruschetta",
     price: "$5.99",
     description:
       "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
+    imgUrl: "/assets/bruchetta.svg",
   },
   {
     name: "Lemon Desert",
     price: "$4.99",
     description:
       "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
+    imgUrl: "/assets/lemon dessert.jpg",
   },
 ];
 
@@ -38,6 +41,7 @@ const Specials = () => {
             name={special.name}
             price={special.price}
             description={special.description}
+            imgUrl={special.imgUrl}
           />
         ))}
       </div>
