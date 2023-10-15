@@ -1,4 +1,3 @@
-import MenuCard from "../common/menu-card";
 import TestimonialCard from "../common/testimonial-card";
 
 const testimonials = [
