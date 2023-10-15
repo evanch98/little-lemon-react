@@ -2,22 +2,28 @@ import TestimonialCard from "../common/testimonial-card";
 
 const testimonials = [
   {
-    name: "Greek Salad",
-    price: "$12.99",
-    description:
-      "The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago feta cheese, garnished with crunchy garlic and rosemary croutons.",
+    imgUrl: "/assets/c1.svg",
+    name: "Emily Stone",
+    feedback:
+      "It's a great experience. The ambiance is very welcoming and charming..",
   },
   {
-    name: "Bruschetta",
-    price: "$5.99",
-    description:
-      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
+    imgUrl: "/assets/c2.svg",
+    name: "John Doe",
+    feedback:
+      "It's a great experience. The ambiance is very welcoming and charming.",
   },
   {
-    name: "Lemon Desert",
-    price: "$4.99",
-    description:
-      "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
+    imgUrl: "/assets/c3.svg",
+    name: "Tiara Clark",
+    feedback:
+      "It's a great experience. The ambiance is very welcoming and charming.",
+  },
+  {
+    imgUrl: "/assets/c4.svg",
+    name: "Vivian Lee",
+    feedback:
+      "It's a great experience. The ambiance is very welcoming and charming.",
   },
 ];
 
@@ -30,9 +36,9 @@ const Testimonials = () => {
       <div className="w-full flex items-center justify-center space-x-[20px]">
         {testimonials.map((testimonial) => (
           <TestimonialCard
-            imgUrl="/assets/c1.svg"
-            name="Emily Stone"
-            feedback="It's a great experience. The ambiance is very welcoming and charming.."
+            imgUrl={testimonial.imgUrl}
+            name={testimonial.name}
+            feedback={testimonial.feedback}
           />
         ))}
       </div>
